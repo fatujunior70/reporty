@@ -1,0 +1,953 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    background: #0b5d3b;
+    color: white;
+    padding: 35px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    font-size: 17px;
+    opacity: 0.95;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    background: white;
+    margin: 45px auto;
+    padding: 55px 30px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #0b5d3b;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: 0 auto 30px;
+    color: #555;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    display: inline-block;
+    background: #0b5d3b;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #08482e;
+}
+
+
+/* =========================
+   HOME PAGE BUTTONS
+========================= */
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.admin-btn {
+    background: #333;
+}
+
+.admin-btn:hover {
+    background: #555;
+}
+
+
+/* =========================
+   INFORMATION CARDS
+========================= */
+
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.info-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+.info-card h3 {
+    color: #0b5d3b;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   FORM SECTION
+========================= */
+
+.form-section {
+    background: white;
+    max-width: 800px;
+    margin: 45px auto;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.form-section h2 {
+    color: #0b5d3b;
+    margin-bottom: 8px;
+}
+
+.form-intro {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #0b5d3b;
+    box-shadow: 0 0 0 2px rgba(11, 93, 59, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.location-coordinates {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-actions {
+    margin-top: 30px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-left: 15px;
+    color: #0b5d3b;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   SUCCESS PAGE
+========================= */
+
+.success-section {
+    background: white;
+    max-width: 650px;
+    margin: 80px auto;
+    padding: 50px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.success-section h1 {
+    color: #0b5d3b;
+    margin-bottom: 15px;
+}
+
+.success-section p {
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h1 {
+    color: #0b5d3b;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.login-box > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.login-box .btn {
+    width: 100%;
+}
+
+.login-box .back-link {
+    display: block;
+    text-align: center;
+    margin: 20px 0 0;
+}
+
+
+/* =========================
+   ERROR / SUCCESS MESSAGE
+========================= */
+
+.error-message {
+    background: #fdeaea;
+    color: #a40000;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border-left: 4px solid #a40000;
+}
+
+.success-message {
+    background: #eaf7ef;
+    color: #146c3a;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border-left: 4px solid #146c3a;
+}
+
+
+/* =========================
+   ADMIN HEADER
+========================= */
+
+.admin-header {
+    background: #0b5d3b;
+    color: white;
+    padding: 22px 0;
+}
+
+.admin-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.admin-header h1 {
+    margin-bottom: 4px;
+}
+
+.admin-header p {
+    opacity: 0.9;
+}
+
+.admin-navigation {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.admin-navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.admin-navigation a:hover {
+    text-decoration: underline;
+}
+
+.logout-btn {
+    background: #b42318;
+    color: white !important;
+    padding: 9px 16px;
+    border-radius: 5px;
+    text-decoration: none !important;
+}
+
+.logout-btn:hover {
+    background: #8f1b13;
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+    padding: 45px 0;
+}
+
+.dashboard h2 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+    margin-bottom: 45px;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+    border-top: 4px solid #0b5d3b;
+}
+
+.stat-card h3 {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0b5d3b;
+}
+
+.stat-card.pending {
+    border-top-color: #e09f00;
+}
+
+.stat-card.pending p {
+    color: #b57700;
+}
+
+.stat-card.confirmed {
+    border-top-color: #16834b;
+}
+
+.stat-card.confirmed p {
+    color: #16834b;
+}
+
+.stat-card.declined {
+    border-top-color: #b42318;
+}
+
+.stat-card.declined p {
+    color: #b42318;
+}
+
+.stat-card.action {
+    border-top-color: #2563eb;
+}
+
+.stat-card.action p {
+    color: #2563eb;
+}
+
+
+/* =========================
+   ADMIN ACTIONS
+========================= */
+
+.admin-actions {
+    margin-top: 20px;
+}
+
+.action-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.admin-action-card {
+    display: block;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #222;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+}
+
+.admin-action-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.admin-action-card h3 {
+    color: #0b5d3b;
+    margin-bottom: 10px;
+}
+
+.admin-action-card span {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #b57700;
+}
+
+
+/* =========================
+   REPORTS
+========================= */
+
+.reports-section {
+    padding: 45px 0;
+}
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+.section-heading h2 {
+    color: #0b5d3b;
+}
+
+.section-heading p {
+    color: #666;
+}
+
+.reports-table-container {
+    background: white;
+    border-radius: 10px;
+    overflow-x: auto;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+.reports-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 850px;
+}
+
+.reports-table th,
+.reports-table td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.reports-table th {
+    background: #0b5d3b;
+    color: white;
+}
+
+.reports-table tr:hover {
+    background: #f8faf9;
+}
+
+.view-btn {
+    display: inline-block;
+    background: #0b5d3b;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.view-btn:hover {
+    background: #08482e;
+}
+
+.no-reports {
+    background: white;
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+.no-reports h3 {
+    color: #0b5d3b;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   REPORT DETAILS
+========================= */
+
+.report-details-section {
+    background: white;
+    margin: 45px auto;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.details-header h2 {
+    color: #0b5d3b;
+}
+
+.details-header p {
+    color: #666;
+}
+
+.status-badge {
+    background: #f0f2f4;
+    padding: 9px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.detail-item {
+    background: #f7f8f9;
+    padding: 18px;
+    border-radius: 7px;
+}
+
+.detail-item h3 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.detail-item p {
+    font-weight: bold;
+}
+
+.description-box {
+    margin-top: 25px;
+    background: #f7f8f9;
+    padding: 22px;
+    border-radius: 7px;
+}
+
+.description-box h3 {
+    margin-bottom: 10px;
+    color: #0b5d3b;
+}
+
+
+/* =========================
+   ADMIN REPORT ACTIONS
+========================= */
+
+.report-actions,
+.take-action-section {
+    margin-top: 35px;
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+}
+
+.report-actions h2,
+.take-action-section h2 {
+    color: #0b5d3b;
+    margin-bottom: 8px;
+}
+
+.report-actions p,
+.take-action-section > p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.action-buttons form {
+    margin: 0;
+}
+
+/* Admin Confirm Button */
+
+.action-buttons .confirm-btn {
+    border: none;
+    background: #16834b;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.action-buttons .confirm-btn:hover {
+    background: #11663b;
+}
+
+/* Admin Decline Button */
+
+.decline-btn {
+    border: none;
+    background: #b42318;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.decline-btn:hover {
+    background: #8f1b13;
+}
+
+
+.take-action-section {
+    background: #f8faf9;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.take-action-section form {
+    max-width: 700px;
+}
+
+.already-reviewed {
+    margin-top: 30px;
+    background: #f5f5f5;
+    padding: 18px;
+    border-radius: 7px;
+}
+
+.back-actions {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+
+/* =========================
+   CUSTOM REPORT CONFIRMATION
+   MODAL
+========================= */
+
+.confirm-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm-modal.show {
+    display: flex;
+}
+
+.confirm-box {
+    width: 100%;
+    max-width: 430px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+    animation: modalAppear 0.25s ease;
+}
+
+.confirm-box h3 {
+    color: #0b5d3b;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.confirm-box p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.confirm-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/*
+   These styles apply ONLY to buttons
+   inside the confirmation popup.
+*/
+
+.confirm-modal .confirm-btn,
+.confirm-modal .cancel-btn {
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.confirm-modal .confirm-btn {
+    background: #0b5d3b;
+    color: white;
+}
+
+.confirm-modal .confirm-btn:hover {
+    background: #08482e;
+}
+
+.confirm-modal .cancel-btn {
+    background: #777;
+    color: white;
+}
+
+.confirm-modal .cancel-btn:hover {
+    background: #555;
+}
+
+
+/* =========================
+   MODAL ANIMATION
+========================= */
+
+@keyframes modalAppear {
+
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 40px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 1000px) {
+
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .info-section {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .admin-header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .admin-navigation {
+        flex-wrap: wrap;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .action-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .location-coordinates {
+        grid-template-columns: 1fr;
+    }
+
+    .form-section,
+    .report-details-section {
+        padding: 25px;
+    }
+
+    .details-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .action-buttons form,
+    .action-buttons button {
+        width: 100%;
+    }
+
+    .back-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .back-link {
+        margin-left: 0;
+    }
+
+    .confirm-buttons {
+        flex-direction: column-reverse;
+    }
+
+    .confirm-modal .confirm-btn,
+    .confirm-modal .cancel-btn {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 35px 20px;
+    }
+
+    .form-section,
+    .report-details-section {
+        padding: 20px;
+    }
+
+    .login-box {
+        padding: 25px;
+    }
+
+    .home-buttons {
+        flex-direction: column;
+    }
+
+    .home-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+}
